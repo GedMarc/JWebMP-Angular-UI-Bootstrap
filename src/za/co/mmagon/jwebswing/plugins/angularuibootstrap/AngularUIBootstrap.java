@@ -1,7 +1,5 @@
 package za.co.mmagon.jwebswing.plugins.angularuibootstrap;
 
-import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
-import za.co.mmagon.jwebswing.base.html.List;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
 /**
@@ -23,23 +21,4 @@ public class AngularUIBootstrap
         //Nothing needed
     }
 
-    /**
-     * Apply to a UL list
-     *
-     * @param list
-     */
-    public static void applyToList(List list)
-    {
-        list.addAttribute("ui-sortable", "");
-    }
-
-    /**
-     * Apply to any component
-     *
-     * @param list
-     */
-    public static void applyToComponent(ComponentHierarchyBase list)
-    {
-        list.addAttribute("ui-sortable", "");
-    }
 }

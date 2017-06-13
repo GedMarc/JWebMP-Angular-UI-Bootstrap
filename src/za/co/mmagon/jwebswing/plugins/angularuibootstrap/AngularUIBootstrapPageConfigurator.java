@@ -48,7 +48,7 @@ class AngularUIBootstrapPageConfigurator extends PageConfigurator
         {
             JQueryPageConfigurator.setRequired(page.getBody(), true);
             AngularPageConfigurator.setRequired(page.getBody(), true);
-            BootstrapPageConfigurator.setBootstrapRequired(page.getBody(), true);
+            BootstrapPageConfigurator.setRequired(page.getBody(), true);
 
             page.getBody().addJavaScriptReference(AngularUIBootstrapReferencePool.AngularUIBootstrap.getJavaScriptReference());
             page.getBody().addCssReference(AngularUIBootstrapReferencePool.AngularUIBootstrap.getCssReference());
