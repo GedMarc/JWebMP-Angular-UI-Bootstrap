@@ -10,20 +10,20 @@ import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
  */
 class AngularUIBootstrapModule extends AngularModuleBase
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /*
-     * Constructs a new AngularUIBootstrapModule
-     */
-    public AngularUIBootstrapModule()
-    {
-        super("ui.bootstrap");
-    }
-
-    @Override
-    public String renderFunction()
-    {
-        return null;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	/*
+	 * Constructs a new AngularUIBootstrapModule
+	 */
+	public AngularUIBootstrapModule()
+	{
+		super("ui.bootstrap");
+	}
+	
+	@Override
+	public String renderFunction()
+	{
+		return null;
+	}
 }

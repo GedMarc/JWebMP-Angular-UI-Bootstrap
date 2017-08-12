@@ -14,46 +14,44 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
  * @since 08 Jun 2017
  */
 @PluginInformation(pluginName = "Angular UI Bootstrap",
-        pluginDescription = "Bootstrap components written in pure AngularJS by the AngularUI Team",
-        pluginUniqueName = "jwebswing-angular-ui-bootstrap",
-        pluginVersion = "2.5.0",
-        pluginCategories = "angular,bootstrap, ui,web ui, framework",
-        pluginSubtitle = "Bootstrap components written in pure AngularJS by the AngularUI Team",
-        pluginSourceUrl = "https://github.com/angular-ui/bootstrap",
-        pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI-Bootstrap/wiki",
-        pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI-Bootstrap",
-        pluginIconUrl = "",
-        pluginIconImageUrl = "",
-        pluginOriginalHomepage = "https://angular-ui.github.io/bootstrap/",
-        pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularUIBootstrap.jar/download"
-)
-
-class AngularUIBootstrapPageConfigurator extends PageConfigurator
+		pluginDescription = "Bootstrap components written in pure AngularJS by the AngularUI Team",
+		pluginUniqueName = "jwebswing-angular-ui-bootstrap",
+		pluginVersion = "2.5.0",
+		pluginCategories = "angular,bootstrap, ui,web ui, framework",
+		pluginSubtitle = "Bootstrap components written in pure AngularJS by the AngularUI Team",
+		pluginSourceUrl = "https://github.com/angular-ui/bootstrap",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI-Bootstrap/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI-Bootstrap",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
+		pluginOriginalHomepage = "https://angular-ui.github.io/bootstrap/",
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularUIBootstrap.jar/download"
+) class AngularUIBootstrapPageConfigurator extends PageConfigurator
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /*
-     * Constructs a new AngularUIBootstrapPageConfigurator
-     */
-    public AngularUIBootstrapPageConfigurator()
-    {
-        //Nothing needed
-    }
-
-    @Override
-    public Page configure(Page page)
-    {
-        if (!page.isConfigured())
-        {
-            JQueryPageConfigurator.setRequired(page.getBody(), true);
-            AngularPageConfigurator.setRequired(page.getBody(), true);
-            BootstrapPageConfigurator.setRequired(page.getBody(), true);
-
-            page.getBody().addJavaScriptReference(AngularUIBootstrapReferencePool.AngularUIBootstrap.getJavaScriptReference());
-            page.getBody().addCssReference(AngularUIBootstrapReferencePool.AngularUIBootstrap.getCssReference());
-            page.getAngular().getAngularModules().add(new AngularUIBootstrapModule());
-        }
-        return page;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	/*
+	 * Constructs a new AngularUIBootstrapPageConfigurator
+	 */
+	public AngularUIBootstrapPageConfigurator()
+	{
+		//Nothing needed
+	}
+	
+	@Override
+	public Page configure(Page page)
+	{
+		if (!page.isConfigured())
+		{
+			JQueryPageConfigurator.setRequired(page.getBody(), true);
+			AngularPageConfigurator.setRequired(page.getBody(), true);
+			BootstrapPageConfigurator.setRequired(page.getBody(), true);
+			
+			page.getBody().addJavaScriptReference(AngularUIBootstrapReferencePool.AngularUIBootstrap.getJavaScriptReference());
+			page.getBody().addCssReference(AngularUIBootstrapReferencePool.AngularUIBootstrap.getCssReference());
+			page.getAngular().getAngularModules().add(new AngularUIBootstrapModule());
+		}
+		return page;
+	}
 }

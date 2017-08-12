@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-		"angular-bootstrap": "*"
+    "angular-bootstrap": "*"
   }
 }
