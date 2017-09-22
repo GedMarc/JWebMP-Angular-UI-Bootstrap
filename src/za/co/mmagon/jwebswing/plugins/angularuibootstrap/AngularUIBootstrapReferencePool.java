@@ -25,19 +25,20 @@ enum AngularUIBootstrapReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	private AngularUIBootstrapReferencePool()
+	AngularUIBootstrapReferencePool()
 	{
 	
 	}
+	
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
-	private AngularUIBootstrapReferencePool(String data)
+	AngularUIBootstrapReferencePool(String data)
 	{
 	
 	}
 	
-	private AngularUIBootstrapReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	AngularUIBootstrapReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)

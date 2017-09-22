@@ -12,7 +12,7 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		url = "https://angular-ui.github.io/bootstrap/")
 public class AngularUIBootstrap
 {
-
+	
 	/*
 	 * Constructs a new AngularUIBootstrap
 	 */
@@ -20,5 +20,5 @@ public class AngularUIBootstrap
 	{
 		//Nothing needed
 	}
-
+	
 }
