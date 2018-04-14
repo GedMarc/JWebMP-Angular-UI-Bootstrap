@@ -1,24 +1,25 @@
-package za.co.mmagon.jwebswing.plugins.angularuibootstrap;
+package com.jwebmp.plugins.angularuibootstrap;
 
+import com.jwebmp.BaseTestClass;
+import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
-import za.co.mmagon.jwebswing.BaseTestClass;
-import za.co.mmagon.jwebswing.Page;
 
 /**
  * @author Marc Magon
  */
-public class AngularUIBootstrapPageConfiguratorTest extends BaseTestClass
+public class AngularUIBootstrapPageConfiguratorTest
+		extends BaseTestClass
 {
-	
+
 	public AngularUIBootstrapPageConfiguratorTest()
 	{
 	}
-	
+
 	@Test
 	public void testSomeMethod()
 	{
 		Page p = getInstance();
 		System.out.println(p.toString(0));
 	}
-	
+
 }
