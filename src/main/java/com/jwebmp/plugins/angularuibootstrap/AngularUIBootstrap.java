@@ -25,7 +25,8 @@ import com.jwebmp.plugins.ComponentInformation;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-@ComponentInformation(name = "Angular UI Bootstrap", description = "Bootstrap components written in pure AngularJS by the AngularUI Team",
+@ComponentInformation(name = "Angular UI Bootstrap",
+		description = "Bootstrap components written in pure AngularJS by the AngularUI Team",
 		url = "https://angular-ui.github.io/bootstrap/")
 public class AngularUIBootstrap
 {

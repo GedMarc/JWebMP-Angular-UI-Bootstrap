@@ -28,7 +28,8 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum AngularUIBootstrapReferencePool implements ReferencePool
+enum AngularUIBootstrapReferencePool
+		implements ReferencePool
 {
 	AngularUIBootstrap(new JavascriptReference("AngularUIBootstrap", 2.5, "bower_components/angular-bootstrap/ui-bootstrap-tpls.js"),
 	                   new CSSReference("AngularUIBootstrap", 2.5, "bower_components/angular-bootstrap/ui-bootstrap-csp.css"));
