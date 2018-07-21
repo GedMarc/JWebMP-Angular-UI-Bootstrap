@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.angularuibootstrap;
 
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * Angular UI Sortable Helper
