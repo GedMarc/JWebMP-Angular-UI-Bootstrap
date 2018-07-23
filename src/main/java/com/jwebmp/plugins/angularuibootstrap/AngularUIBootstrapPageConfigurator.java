@@ -18,10 +18,10 @@
 package com.jwebmp.plugins.angularuibootstrap;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * The Angular UI Sortable Configurator
@@ -41,11 +41,10 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://angular-ui.github.io/bootstrap/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularUIBootstrap.jar/download") class AngularUIBootstrapPageConfigurator
-		extends PageConfigurator
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularUIBootstrap.jar/download")
+public class AngularUIBootstrapPageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new AngularUIBootstrapPageConfigurator
@@ -67,9 +66,6 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 			    .addJavaScriptReference(AngularUIBootstrapReferencePool.AngularUIBootstrap.getJavaScriptReference());
 			page.getBody()
 			    .addCssReference(AngularUIBootstrapReferencePool.AngularUIBootstrap.getCssReference());
-			page.getAngular()
-			    .getAngularModules()
-			    .add(new AngularUIBootstrapModule());
 		}
 		return page;
 	}
