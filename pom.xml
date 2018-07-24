@@ -47,14 +47,14 @@
             <version>${project.version}</version>
             <type>jar</type>
             <classifier>${jwebmp.runtime.classifier}</classifier>
-            <!--<optional>true</optional>-->
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>jwebmp-bootstrap</artifactId>
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
-            <!--<optional>true</optional>-->
+            <optional>true</optional>
         </dependency>
     </dependencies>
     <scm>
