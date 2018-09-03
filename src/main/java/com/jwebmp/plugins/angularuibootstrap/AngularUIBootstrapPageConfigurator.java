@@ -47,6 +47,10 @@ import javax.validation.constraints.NotNull;
 public class AngularUIBootstrapPageConfigurator
 		implements IPageConfigurator
 {
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
 
 	/*
 	 * Constructs a new AngularUIBootstrapPageConfigurator
@@ -54,6 +58,31 @@ public class AngularUIBootstrapPageConfigurator
 	public AngularUIBootstrapPageConfigurator()
 	{
 		//Nothing needed
+	}
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return AngularUIBootstrapPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		AngularUIBootstrapPageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -71,5 +100,11 @@ public class AngularUIBootstrapPageConfigurator
 			    .addCssReference(AngularUIBootstrapReferencePool.AngularUIBootstrap.getCssReference());
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return AngularUIBootstrapPageConfigurator.enabled;
 	}
 }
