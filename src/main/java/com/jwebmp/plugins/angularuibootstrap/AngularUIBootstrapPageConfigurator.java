@@ -38,14 +38,14 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "angular,bootstrap, ui,web ui, framework",
 		pluginSubtitle = "Bootstrap components written in pure AngularJS by the AngularUI Team",
 		pluginSourceUrl = "https://github.com/angular-ui/bootstrap",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI-Bootstrap/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-UI-Bootstrap",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Angular-UI-Bootstrap/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Angular-UI-Bootstrap",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://angular-ui.github.io/bootstrap/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularUIBootstrap.jar/download")
 public class AngularUIBootstrapPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<AngularUIBootstrapPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
