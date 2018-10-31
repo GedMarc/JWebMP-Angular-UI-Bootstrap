@@ -31,7 +31,6 @@ public class AngularUIBootstrapModule
 		implements IAngularModule<AngularUIBootstrapModule>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new AngularUIBootstrapModule
