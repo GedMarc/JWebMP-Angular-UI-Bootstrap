@@ -1,11 +1,3 @@
-import com.jwebmp.core.base.angular.services.IAngularModule;
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.angularuibootstrap.AngularUIBootstrapModule;
-import com.jwebmp.plugins.angularuibootstrap.AngularUIBootstrapPageConfigurator;
-import com.jwebmp.plugins.angularuibootstrap.implementations.AngularUIBootstrapExclusionsModule;
-
 module com.jwebmp.plugins.angularuibootstrap {
 	exports com.jwebmp.plugins.angularuibootstrap;
 
@@ -14,10 +6,10 @@ module com.jwebmp.plugins.angularuibootstrap {
 	requires com.jwebmp.guicedinjection;
 	requires com.jwebmp.core.angularjs;
 
-	provides IPageConfigurator with AngularUIBootstrapPageConfigurator;
-	provides IAngularModule with AngularUIBootstrapModule;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.angularuibootstrap.AngularUIBootstrapPageConfigurator;
+	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angularuibootstrap.AngularUIBootstrapModule;
 
-	provides IGuiceScanModuleExclusions with AngularUIBootstrapExclusionsModule;
-	provides IGuiceScanJarExclusions with AngularUIBootstrapExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularuibootstrap.implementations.AngularUIBootstrapExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.angularuibootstrap.implementations.AngularUIBootstrapExclusionsModule;
 
 }
